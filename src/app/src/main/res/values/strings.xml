@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NTVPlayer</string>
+    <string name="connect">Play</string>
+    <string name="disconnect">Stop</string>
+    <string name="power">Power</string>
+    <string name="up">Prevous</string>
+    <string name="down">Next</string>
+    <string name="record">Record</string>
+    <string name="ip_addr">NTV Server ip</string>
+    <string name="back">Back</string>
+    <string name="network_cacheing">network caching</string>
+    <string name="scan_barcode">Scan QR Code</string>
+
+    <string name="caching_lowest">Lowest</string>
+    <string name="caching_low">Low</string>
+    <string name="caching_normal">Normal</string>
+    <string name="caching_high">High</string>
+    <string name="caching_higher">Higher</string>
+
+
+    <string name="server_control">Server Control</string>
+    <string name="fullhd">FULLHD</string>
+    <string name="hd">HD</string>
+    <string name="dvd">DVD</string>
+    <string name="stop_service">Stop </string>
+    <string name="reboot">Reboot</string>
+
+</resources>

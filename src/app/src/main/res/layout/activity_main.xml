@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_surface_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    >
+
+
+    <SurfaceView
+        android:id="@+id/surface_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/text_info"
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffddf9fb"
+        />
+
+    <ImageView
+        android:id="@+id/image_record"
+        android:layout_gravity="right"
+        android:background="@drawable/rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rc_panel"
+        android:layout_gravity="center_vertical|right"
+        >
+        <ImageButton
+            android:id="@+id/btn_power"
+            android:src="@drawable/power"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_return"
+            android:src="@drawable/return1"
+            android:onClick="OnServiceCommandButton"
+            android:layout_toRightOf="@+id/btn_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <ImageButton
+            android:id="@+id/btn_1"
+            android:src="@drawable/n1"
+            android:onClick="OnServiceCommandButton"
+            android:layout_below="@+id/btn_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_4"
+            android:src="@drawable/n4"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_1" />
+
+        <ImageButton
+            android:id="@+id/btn_7"
+            android:src="@drawable/n7"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_4" />
+
+        <ImageButton
+            android:id="@+id/btn_2"
+            android:src="@drawable/n2"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_power"
+            android:layout_toRightOf="@+id/btn_1"
+            />
+        <ImageButton
+            android:id="@+id/btn_5"
+            android:src="@drawable/n5"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_1"
+            android:layout_below="@+id/btn_2" />
+
+        <ImageButton
+            android:id="@+id/btn_8"
+            android:src="@drawable/n8"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_1"
+            android:layout_below="@+id/btn_4" />
+
+        <ImageButton
+            android:id="@+id/btn_0"
+            android:src="@drawable/n0"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_1"
+            android:layout_below="@+id/btn_7" />
+
+        <ImageButton
+            android:id="@+id/btn_3"
+            android:src="@drawable/n3"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_power"
+            android:layout_toRightOf="@+id/btn_2"/>
+
+        <ImageButton
+            android:id="@+id/btn_6"
+            android:src="@drawable/n6"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_2"
+            android:layout_below="@+id/btn_1" />
+
+        <ImageButton
+            android:id="@+id/btn_9"
+            android:src="@drawable/n9"
+            android:onClick="OnServiceCommandButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_2"
+            android:layout_below="@+id/btn_4" />
+
+        <ImageButton
+            android:id="@+id/btn_backward"
+            android:src="@drawable/previous"
+            android:onClick="OnServiceCommandButton"
+            android:layout_below="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_forward"
+            android:src="@drawable/next"
+            android:onClick="OnServiceCommandButton"
+            android:layout_toRightOf="@+id/btn_2"
+            android:layout_below="@+id/btn_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/server_panel"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_height="wrap_content"
+        android:background="#ffddf9fb"
+        >
+        <TextView
+            android:text="@string/server_control"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_fullhd"
+            android:text="@string/fullhd"
+            android:onClick="OnServerControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_hd"
+            android:text="@string/hd"
+            android:onClick="OnServerControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_dvd"
+            android:text="@string/dvd"
+            android:onClick="OnServerControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_server_stop"
+            android:text="@string/stop_service"
+            android:onClick="OnServerControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_reboot"
+            android:text="@string/reboot"
+            android:onClick="OnServerControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/control_panel"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_height="wrap_content"
+        >
+        <ImageButton
+            android:id="@+id/btn_connect"
+            android:src="@drawable/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_record"
+            android:src="@drawable/rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <ImageButton
+            android:id="@+id/btn_setting"
+            android:src="@drawable/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_info"
+            android:src="@drawable/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_server_setting"
+            android:src="@drawable/server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/btn_rc"
+            android:src="@drawable/rc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

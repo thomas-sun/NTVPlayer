@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NTVPlayer</string>
+    <string name="connect">開始播放</string>
+    <string name="disconnect">停止播放</string>
+    <string name="power">機上盒電源</string>
+    <string name="up">上一台</string>
+    <string name="down">下一台</string>
+    <string name="record">錄影</string>
+    <string name="ip_addr">服務器IP</string>
+    <string name="back">返回</string>
+    <string name="network_cacheing">網路快取</string>
+    <string name="scan_barcode">掃描登入碼</string>
+
+    <string name="caching_lowest">最低延遲</string>
+    <string name="caching_low">低延遲</string>
+    <string name="caching_normal">正常</string>
+    <string name="caching_high">高延遲</string>
+    <string name="caching_higher">較高延遲</string>
+
+
+    <string name="server_control">服務器控制</string>
+    <string name="fullhd">全高清</string>
+    <string name="hd">高清</string>
+    <string name="dvd">DVD</string>
+    <string name="stop_service">停止服務</string>
+    <string name="reboot">重開機</string>
+
+</resources>
